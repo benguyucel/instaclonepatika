@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* NAVBAR ######################################################################## */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.user-navbar {
+    background-color: #fcfcfc;
+    height: 54px;
+}
+
+.user-navbar .navbar-brand img {
+    width: 100px;
+}
+
+.user-navbar .search {
+    width: 100%;
+    max-width: 250px;
+}
+
+.user-navbar .search .search-input {
+    width: 100%;
+    border-radius: 5px;
+    user-select: none;
+    height: 31px;
+    border: none;
+    background-color: #ddd;
+    outline: none;
+    text-indent: 30px;
+    padding-left: 10px;
+}
+
+.user-navbar .search .search-input::placeholder {
+    background: url('../assets/search-solid.svg');
+    background-size: 15px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.user-navbar .menu ul li a {
+    color: #111111;
+}
+
+.user-navbar .menu ul li a.active {
+    color: #7c7c7c;
+    display: block;
+}
+
+.user-navbar .menu ul li a i {
+    font-size: 18px;
+}
+
+.user-navbar .menu ul li a img {
+    width: 23px;
+    border-radius: 50%;
+}
+
+
+/* Navbar ######################################################################## */
+
+
+/* Stories ######################################################################## */
+
+#stories {
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories {
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+}
+
+.stories .story-item {
+    margin: 0 10px 0 0;
+}
+
+.stories .story-item a {
+    position: relative;
+    display: block;
+    border-radius: 100%;
+}
+
+.stories .story-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg, rgb(91, 255, 15), orange) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.stories .story-item a img {
+    border-radius: 50%;
+    width: 70px;
+}
+
+
+/* Stories ######################################################################## */
+
+
+/* Posts  Start######################################################################## */
+
+.posts .card {
+    margin-bottom: 20px;
+}
+
+.posts .card .card-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts .card .card-header .person-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts .card .card-header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.posts .card .card-header .info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.posts .card .card-header .info span {
+    padding: 0;
+    margin: 0;
+}
+
+.posts .card .card-header .info span.username {
+    font-weight: bold
+}
+
+.posts .card .card-header .options a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #111;
+}
+
+.posts .card .card-body {
+    padding: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+
+/* Norman Content Start #################################################### */
+
+.posts .card .normal-content a {
+    text-decoration: none;
+}
+
+
+/* Top likes comment send save icons a  */
+
+.posts .card .normal-content .top a {
+    color: #111;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+/* Top likes comment send save icons a  */
+
+
+/* Like Counter  */
+
+.posts .card .normal-content .likes-count a {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Like Counter  */
+
+.posts .card .normal-content .comments-container .comment-info {
+    display: block;
+}
+
+.posts .card .normal-content .comments-container .comment {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.posts .card .normal-content .comments-container .comment a {
+    margin-right: 3px;
+}
+
+.posts .card .normal-content .comments-container .comment-info {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.posts .card .normal-content .comments-container .comment-owner {
+    color: #111;
+    font-weight: bold;
+    display: inline;
+    display: block;
+}
+
+.posts .card .comment-form {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.posts .card .send-comment {
+    border: none;
+    resize: none;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    max-height: 40px;
+    text-indent: 10px;
+}
+
+.posts .card .comment-form .share-button {
+    margin-top: -10px;
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* Norman Content End #################################################### */
+
+
+/* Right Side Start ########################################### */
+
+.right-side .right-side-top .top-side-profile img {
+    width: 57px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+.right-side .right-side-top .top-side-middle a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.right-side .suggestions h6 {
+    color: #999;
+}
+
+.right-side .suggestions a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.right-side .right-side-top .top-side-middle a.username {
+    color: #111;
+    font-weight: bold;
+}
+
+.right-side .right-side-top .top-side-middle a.name {
+    color: #7c7c7c;
+}
+
+
+/* right-side-bottom start #############################################*/
+
+.right-side-bottom-item {
+    margin-bottom: 10px;
+}
+
+.right-side-bottom-item a {
+    font-size: 13px;
+}
+
+.right-side-bottom .suggestion-user img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.right-side-bottom .suggestion-user a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.right-side-bottom .suggestion-user span {
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
+
+/*  footer  start */
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer ul li::marker {
+    font-size: 11px;
+    white-space: normal
+}
+
+.footer ul li {
+    line-height: 11px;
+}
+
+.footer ul li a {
+    color: #999;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.footer .copy {
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
+
+/*  footer  end */
+
+
+/* right-side-bottom end #############################################*/
+
+
+/* Right Side End  ############################################# */
+
+
+/* Posts  End######################################################################## */
